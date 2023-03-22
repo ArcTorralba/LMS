@@ -18,7 +18,7 @@ if(!isset($_SESSION['admin_name'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>admin page</title>
 
-   
+   <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -27,11 +27,12 @@ if(!isset($_SESSION['admin_name'])){
 <div class="container">
 
    <div class="content">
-     
-      <h1>WELCOME <span></span></h1>
-      <p>to KAAA</p>
-      <a href="login_form.html" class="btn">login</a>
-      <a href="register_form.html" class="btn">register</a>
+      <h3>hi, <span>admin</span></h3>
+      <h1>welcome <span><?php echo $_SESSION['admin_name'] ?></span></h1>
+      <p>this is an admin page</p>
+      <a href="login_form.php" class="btn">login</a>
+      <a href="register_form.php" class="btn">register</a>
+      <a href="logout.php" class="btn">logout</a>
    </div>
 
 </div>
